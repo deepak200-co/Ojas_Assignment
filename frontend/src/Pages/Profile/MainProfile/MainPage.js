@@ -20,7 +20,7 @@ const MainProfile = ({ user }) => {
   const username = user?.email?.split('@')[0];
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    fetch(`https://twitter-clone-api-psi.vercel.app/userpost?email=${user?.email}`)
+    fetch(`http://localhost:5000/userpost?email=${user?.email}`)
       .then(res => res.json())
       .then(data => {
         setPosts(data);
@@ -44,7 +44,7 @@ const MainProfile = ({ user }) => {
         setIsLoading(false)
 
         if (url) {
-          fetch(`https://twitter-clone-api-psi.vercel.app/userUpdates/${user?.email}`, {
+          fetch(`http://localhost:5000/userUpdates/${user?.email}`, {
             method: "PATCH",
             headers: {
               'content-type': 'application/json'
@@ -81,7 +81,7 @@ const MainProfile = ({ user }) => {
         }
         setIsLoading(false)
         if (url) {
-          fetch(`https://twitter-clone-api-psi.vercel.app/userUpdates/${user?.email}`, {
+          fetch(`http://localhost:5000/userUpdates/${user?.email}`, {
             method: "PATCH",
             headers: {
               'content-type': 'application/json'
@@ -169,7 +169,7 @@ const MainProfile = ({ user }) => {
                     {loggedInUser[0]?.website ? <p className='subInfo link'><AddLinkIcon /> {loggedInUser[0].website}</p> : ''}
                   </div>
                 </div>
-                <h4 className='tweetsText'>Tweets</h4>
+                <h4 className='tweetsText'>Instagram</h4>
                 <hr />
               </div>
               {

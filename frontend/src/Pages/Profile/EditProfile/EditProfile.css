@@ -32,10 +32,11 @@
     background-color: black;
     padding: 5px 20px;
     border-radius: 20px;
+    cursor: pointer;
 
   }
 
-  .header__twittericon {
+  .header__instaicon {
     display: flex;
     flex-direction: row;
     z-index: 1;
@@ -45,8 +46,8 @@
     width: 30px;
   }
 
-  .header__twittericon>.twitterIcon {
-    color: var(--twitter-color);
+  .header__instaicon>.InstagramIcon {
+    color: var(--insta-color);
     font-size: 35px !important;
     margin-left: 250px;
   }

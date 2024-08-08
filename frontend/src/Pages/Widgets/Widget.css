@@ -12,7 +12,7 @@
   .widgets__input {
     display: flex;
     align-items: center;
-    background-color: var(--twitter-background);
+    background-color: var(--insta-background);
     padding: 50px 70px;
     border-radius: 50px;
     margin-top: 10px;
@@ -22,7 +22,7 @@
   .widgets__input>input {
     border: none;
     margin-top: 0px;
-    background-color: var(--twitter-background);
+    background-color: var(--insta-background);
   }
 
   .widgets__searchIcon {

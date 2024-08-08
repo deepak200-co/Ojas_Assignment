@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Login.css'
-import twitterImage from '../../assets/images/twitter.png';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramImage from "../../assets/images/instagram-celular.png"
+import InstagramIcon from '@mui/icons-material/Instagram'
 import auth from '../../firebaseinit';
 import { useCreateUserWithEmailAndPassword,useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import Googlebutton from 'react-google-button'
@@ -47,7 +47,7 @@ const Signup = () => {
             email
 
         }
-        axios.post(`https://twitter-clone-api-psi.vercel.app/register`, user)
+        axios.post(`http://localhost:5000/register`, user)
 
     }
     const handleGoogleSignIn =() =>{
@@ -57,14 +57,13 @@ const Signup = () => {
     return (
         <div className="Login-container">
             <div class="image-container">
-                <img className="image" src={twitterImage} alt="twitter-bacground" />
+                <img className="image" src={InstagramImage} alt="insta-bacground" />
 
             </div>
             <div class="form-container">
                 <div className="form-box">
-                    <TwitterIcon className="TwitterIcon" style={{ color: 'skyblue' }} />
-                    <h2 className="heading"> Happeing now </h2>
-                    <h3 className="heading1">Join Twitter Today</h3>
+                    <InstagramIcon className="InstagramIcon" />
+                    <h3 className="heading1">Join Instagram Today</h3>
                     <form onSubmit={handleSubmit}>
                         <input type="text"
                             className="display-name"

@@ -1,5 +1,5 @@
 .sidebar{
-    border-right: 1px solid var(--twitter-background);
+    border-right: 1px solid var(--insta-background);
     flex:0.3;
     position: inherit;
     min-width: 150px;
@@ -11,15 +11,14 @@
     display: none;
 }
 
-.Sidebar_twitterIcon{
-    color: var(--twitter-color);
+.Sidebar_InstaIcon{
     font-size: 35px !important;
     margin-left: 20px;
     margin-bottom: 10px;
 }
 
 .sidebar_tweet{
-    background-color: var(--twitter-color) !important;
+    background-color: var(--insta-color) !important;
     border: none !important;
     color: white !important;
     font-weight: 900 !important;

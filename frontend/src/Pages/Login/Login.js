@@ -1,11 +1,11 @@
 import './Login.css';
 import React, { useState } from "react";
-import twitterImage from '../../assets/images/twitter.png';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramImage from "../../assets/images/instagram-celular.png"
 import auth from '../../firebaseinit';
 import {useSignInWithEmailAndPassword, useSignInWithGoogle} from 'react-firebase-hooks/auth';
 import Googlebutton from 'react-google-button'
 import { useNavigate, Link } from 'react-router-dom';
+import InstagramIcon from '@mui/icons-material/Instagram'
 
 
 
@@ -66,14 +66,13 @@ const MyLogin = () => {
     <>
       <div className="Login-container">
         <div class="image-container">
-          <img className='image' src={twitterImage} alt="twitter-bacground" />
+          <img className='image' src={InstagramImage} alt="Insta-bacground" />
 
         </div>
         <div class="form-container">
         <div className="form-box">
 
-          <TwitterIcon  className="TwitterIcon" style ={{ color:'skyblue' }}/>
-          <h2 className="heading"> Happeing now </h2>
+          <InstagramIcon  className="InstagramIcon"/>
           <h3 className="heading1">What's Happening Today</h3>
 
           <form onSubmit={handleSubmit}>

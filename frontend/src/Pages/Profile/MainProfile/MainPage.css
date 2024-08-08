@@ -6,7 +6,7 @@
   }
   
   .arrow-icon:hover {
-    color: var(--twitter-color);
+    color: var(--insta-color);
   }
   
   .coverImage {
@@ -164,7 +164,7 @@
   }
   
   .link {
-    color: var(--twitter-color);
+    color: var(--insta-color);
     cursor: pointer;
   }
   

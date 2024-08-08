@@ -46,11 +46,12 @@ const TweetBox = () => {
     const handleTweet = (e) => {
         e.preventDefault();
         if(user.providerData[0].providerId === "password"){
-            fetch(`https://twitter-clone-api-psi.vercel.app/loggedInUser?email=${email}`)
+            fetch(`http://localhost:5000/loggedInUser?email=${email}`)
                 .then(res => res.json())
                 .then(data => {
                     setName(data[0?.name])
                     setUsername(data[0]?.username)
+                    
                 })
         }
         else{
@@ -69,7 +70,7 @@ const TweetBox = () => {
             }
             setPost('');
             setImageURL('');
-            fetch(`https://twitter-clone-api-psi.vercel.app//post`, {
+            fetch(`http://localhost:5000/post`, {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json'
@@ -110,7 +111,7 @@ const TweetBox = () => {
                         onChange={handleUploadImage}
                     />
                     <Button className='tweetBox__tweetButton' type='submit'>
-                        Tweet
+                        post
                     </Button>
                 </div>
             </form>

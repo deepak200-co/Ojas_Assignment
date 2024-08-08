@@ -1,7 +1,7 @@
 .post {
     display: flex;
     align-items: flex-start;
-    border-bottom: 1px solid var(--twitter-background);
+    border-bottom: 1px solid var(--insta-background);
     padding-bottom: 10px;
   }
 
@@ -27,7 +27,7 @@
 
   .post__footer__icon:hover {
     cursor: pointer;
-    color: var(--twitter-color);
+    color: var(--insta-color);
   }
 
 
@@ -45,7 +45,7 @@
 
   .post__badge {
     font-size: 14px !important;
-    color: var(--twitter-color);
+    color: var(--insta-color);
   }
 
 

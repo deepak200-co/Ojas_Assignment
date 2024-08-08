@@ -2,7 +2,7 @@
 
 .page {
     flex: 0.4;
-    border-right: 1px solid var(--twitter-background);
+    border-right: 1px solid var(--insta-background);
     width: 100vw;
     padding: 0 180px;
     height: 100vh;
@@ -12,7 +12,7 @@
 
 .profilePage {
     flex: 0.4;
-    border-right: 1px solid var(--twitter-background);
+    border-right: 1px solid var(--insta-background);
     min-width: fit-content;
     overflow-y: scroll;
 }
@@ -23,7 +23,7 @@
 
 
 .pageTitle {
-    color: var(--twitter-color);
+    color: var(--insta-color);
     text-align: center;
     font-size: 30px;
 }

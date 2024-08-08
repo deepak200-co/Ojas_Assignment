@@ -8,7 +8,7 @@ const Feed = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch('https://twitter-clone-api-psi.vercel.app/post')
+        fetch('http://localhost:5000/post')
             .then(res => res.json())
             .then(data => {
                 setPosts(data);

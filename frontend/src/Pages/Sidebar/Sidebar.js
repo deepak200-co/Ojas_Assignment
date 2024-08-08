@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
 import CustomLink from './CustomLink'
-import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import SidebarOptions from './SidebarOptions';
 import HomeIcon from '@mui/icons-material/Home';
 import NotificationsIcon from '@mui/icons-material/Notifications';
@@ -12,7 +12,7 @@ import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import DoneIcon from '@mui/icons-material/Done'
-import { Avatar, Button, Divider, IconButton, ListItemIcon, Menu, MenuItem } from '@mui/material';
+import { Avatar, Divider, IconButton, ListItemIcon, Menu, MenuItem } from '@mui/material';
 import UserLoggedInUser from '../../hooks/UserLoggedInUser';
 
 const Sidebar = ({ handleLogout, user }) => {
@@ -33,7 +33,7 @@ const Sidebar = ({ handleLogout, user }) => {
     const result = user[0]?.email?.split('@')[0];
     return (
         <div className='sidebar'>
-            <TwitterIcon className='Sidebar_twitterIcon' />
+            <InstagramIcon className='Sidebar_InstaIcon' />
             <CustomLink to='/home/feeds'>
                 <SidebarOptions active Icon={HomeIcon} text='Home' />
             </CustomLink>
@@ -58,10 +58,6 @@ const Sidebar = ({ handleLogout, user }) => {
             <CustomLink to='/home/more'>
                 <SidebarOptions active Icon={MoreHorizIcon} text='More' />
             </CustomLink>
-            <Button
-                variant='outlined'
-                className='sidebar_tweet'
-            >Tweet</Button>
             <div className='profile_info'>
                 <Avatar src={userProfilePic} />
                 <div className='user_info'>
@@ -100,7 +96,7 @@ const Sidebar = ({ handleLogout, user }) => {
                     </MenuItem>
                     <Divider />
                     <MenuItem onClick={handleClose}>Add an exisiting account</MenuItem>
-                    <MenuItem onClick={handleLogout}>Log out @dddeepak</MenuItem>
+                    <MenuItem onClick={handleLogout}>Log out</MenuItem>
                 </Menu>
             </div>
         </div>

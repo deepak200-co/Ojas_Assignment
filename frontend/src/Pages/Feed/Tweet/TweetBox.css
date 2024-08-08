@@ -1,6 +1,6 @@
 .tweetBox{
     padding-bottom: 10px;
-    border-bottom: 8px solid var(--twitter-background);
+    border-bottom: 8px solid var(--insta-background);
     padding-right: 10px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .tweetBox__tweetButton{
-    background-color: var(--twitter-color) !important;
+    background-color: var(--insta-color) !important;
     border: none !important;
     color: white !important;
     font-weight: 700 !important;
@@ -46,7 +46,7 @@
 }
 
 .imageIcon{
-    color: var(--twitter-color);
+    color: var(--insta-color);
     padding-left: 25px;
 }
 

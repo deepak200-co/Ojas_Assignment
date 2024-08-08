@@ -8,7 +8,7 @@
 .sidebarOptions:hover{
     background-color: #e8f5fe;
     border-radius: 30px;
-    color: var(--twitter-color);
+    color: var(--insta-color);
     transition: color 100ms ease-out;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .done_icon{
-    color: var(--twitter-color) !important;
+    color: var(--insta-color) !important;
 }
 @media screen and (max-width:688px) {
     .sidebar_tweet{
